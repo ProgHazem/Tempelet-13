@@ -1,0 +1,163 @@
+/*Start Main Rules*/
+
+body{
+  font-family: Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box
+}
+/*Start Container*/
+.container {
+    width: 1170px;
+    margin: auto
+}
+/*End Container*/
+.clearfix{clear: both}
+
+.header, .about, .services, .testimonalis, .contact {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 550px
+}
+.about .about-body, .services .services-body, .contact-body {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 500px;
+    padding: 50px 30px 0;
+    overflow: hidden
+}
+.about .about-body h2, .services .services-body h2, .contact .contact-body {
+    font-size: 23px;
+    color: #FFFF73
+}
+.about .about-body p, .services .services-body p {
+    color: #FFF;
+    line-height: 1.4
+}
+/*End Main Rules*/
+
+/*Start header*/
+/*start scroll navbar*/
+.header .head-scroll {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    display: none;
+    text-align: center;
+    z-index: 9999;
+    line-height: 50px
+}
+.header .head-scroll ul {
+    list-style: none;
+    margin-top: 0
+}
+.header .head-scroll ul li {display: inline-block;margin-right: 50px}
+.header .head-scroll ul li a {text-decoration: none;color: #FFF}
+/*start scroll navbar*/
+.header {
+    background-image: url('../images/image-01.jpg');
+    height: 600px;
+    text-align: center;
+    margin: auto
+}
+.header .head-top ul{list-style: none;margin-top: 0;padding-top: 20px}
+.header .head-top ul li {display: inline-block;margin-right: 50px}
+.header .head-top ul li a {text-decoration: none;color: #FFF}
+.header .head-content {padding-top: 18%;color: #FFF}
+.header .head-content h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 0
+}
+.header .head-content p {font-size: 18px}
+/*End header*/
+/*Start About*/
+.about {
+    background-image: url('../images/image-02.jpg');
+}
+.about .about-body {
+    float: right;
+    margin-right: 40px;
+}
+.about .about-body h2 {
+    padding-top: 20px
+}
+/*End About*/
+/*Start services*/
+.services {
+    background-image: url('../images/image-03.jpg');
+}
+.services .services-body {
+    float: left;
+    margin-left: 70px;
+}
+/*End services*/
+/*Start Testimonalis*/
+.testimonalis {
+    background-image: url('../images/image-04.jpg');
+}
+.testimonalis h2 {
+    text-align: center;
+    padding-top: 8%;
+    margin-top: 0;
+}
+.testimonalis .testimonalis-part {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 5%;
+    margin-top: 5%;
+    float: left;
+    color: #FFF;
+    height: 250px; 
+    text-align: center
+}
+.testimonalis .testimonalis-part:last-child {margin-right: 0}
+.testimonalis .testimonalis-part i {
+    padding-top: 30px
+}
+.testimonalis .testimonalis-part p {
+    padding: 30px 30px;
+    text-align: left;
+    line-height: 1.5
+}
+/*End Testimonalis*/
+/*Start Contact*/
+.contact {
+    background-image: url('../images/image-05.jpg');
+    height: 650px;
+    position: relative
+}
+.contact .copyright {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    width: 40%;
+}
+.contact .copyright p{
+    margin: 0;
+    padding: 10px
+}
+.contact .contact-body {
+    width: 40%;
+    float: right;
+    height: 600px
+}
+.contact .contact-body form input, textarea, button {
+    border: 0;
+    outline: none;
+    background-color: #28313f;
+    margin: 10px;
+    width: 90%;
+    height: 50px;
+    color: #FFF;
+    line-height: 50px;
+    padding-left: 10px
+}
+.contact .contact-body form textarea {height: 200px}
+.contact .contact-body form button {width: 100px;cursor: pointer}
+/*End Contact*/
